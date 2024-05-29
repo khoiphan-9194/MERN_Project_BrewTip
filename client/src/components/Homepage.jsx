@@ -2,14 +2,10 @@
 //this currentPage and handlePageChange were destructed from props
 
 import { useQuery } from '@apollo/client';
-
-// import ThoughtList from '../components/ThoughtList';
-// import ThoughtForm from '../components/ThoughtForm';
+import React from 'react';
 import CoffeeList from './CoffeeList';
 import { QUERY_COFFEEHOUSES } from '../utils/queries';
-import { useState } from 'react';
-import Header from './Header';
-import Auth from '../utils/auth';
+
 
 
 

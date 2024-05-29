@@ -56,47 +56,47 @@ const Signup = () => {
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
           <div className="card-body">
-            {data ? 
-            (
-              <p>
-                Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
-              </p>
-            ) :
-             
-            (
-              <form onSubmit={handleFormSubmit}>
-      
-    
-<Form>
-      <Form.Group className="mb-3" controlId="formGroupUser">
-        <Form.Label>Create Username</Form.Label>
-        <Form.Control type="text" placeholder="Enter new username" name="userName"
-            value={formState.userName}   onChange={handleChange}/>
-      </Form.Group>
+            {data ?
+              (
+                <p>
+                  Success! You may now head{' '}
+                  <Link to="/">back to the homepage.</Link>
+                </p>
+              ) :
 
-      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter new email" name="userEmail"
-               value={formState.userEmail}  onChange={handleChange}/>
-      </Form.Group>
+              (
+                <form onSubmit={handleFormSubmit}>
 
-      <Form.Group className="mb-3" controlId="formGroupPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Enter password" name="password"
-               value={formState.password}  onChange={handleChange}/>
-      </Form.Group>
-    </Form>
 
-                <button
-                  className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </form>
-            )}
+                  <Form>
+                    <Form.Group className="mb-3" controlId="formGroupUser">
+                      <Form.Label>Create Username</Form.Label>
+                      <Form.Control type="text" placeholder="Enter new username" name="userName"
+                        value={formState.userName} onChange={handleChange} />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formGroupEmail">
+                      <Form.Label>Email address</Form.Label>
+                      <Form.Control type="email" placeholder="Enter new email" name="userEmail"
+                        value={formState.userEmail} onChange={handleChange} />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formGroupPassword">
+                      <Form.Label>Password</Form.Label>
+                      <Form.Control type="password" placeholder="Enter password" name="password"
+                        value={formState.password} onChange={handleChange} />
+                    </Form.Group>
+                  </Form>
+
+                  <button
+                    className="btn btn-block btn-primary"
+                    style={{ cursor: 'pointer' }}
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              )}
 
             {error && (
               <div className="my-3 p-3 bg-danger text-white">
@@ -111,30 +111,3 @@ const Signup = () => {
 };
 
 export default Signup;
-/*
-          <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="userName"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="Your email"
-                  name="userEmail"
-                  type="email"
-                  value={formState.userEmail}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-
-*/

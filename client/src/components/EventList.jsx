@@ -1,11 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
 import { Link } from 'react-router-dom';
 const EventList = ({ events = [] }) => {
-  // console.log(events);
-  // if (!events.length) {
-  //   return <h3>Ended Page</h3>;
-  // }
-
   return (
     <>
    

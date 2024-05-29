@@ -1,7 +1,4 @@
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import React, { useEffect, useState, useRef, createContext, useContext } from "react";
-import { useQuery } from '@apollo/client';  
+import React, { useEffect, useState} from "react";
 import { useMutation } from '@apollo/client';
 import { ADD_DONATION } from '../utils/mutations';
 

@@ -28,10 +28,6 @@ module.exports = {
       console.log(data);
     } catch {
       console.log('Invalid token');
-      // console.log('==========');
-     // localStorage.removeItem('id_token');
-      // window.alert('Session Expired. Please login again');
-
 
     }
 

@@ -1,7 +1,6 @@
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
-import { Link } from 'react-router-dom';
 import { ADD_COFFEE_HOUSE } from '../utils/mutations';
 import { useMutation } from '@apollo/client';
 import { useState } from 'react';
@@ -22,17 +21,17 @@ const CreateCoffeeHouse = () => {
   });
 
 
-  
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    
+
     setFormState({
       ...formState,
       [name]: value,
     });
 
-    
+
   };
 
   const handleImageChange = (e) => {
@@ -42,25 +41,26 @@ const CreateCoffeeHouse = () => {
     setNewPostImage(file);
     setNewPostImageName(file.name);
     console.log(file.name);
-  
-      console.log(newPostImage)
-      console.log(newPostImageName)
+
+    console.log(newPostImage)
+    console.log(newPostImageName)
 
   };
 
 
-  const upload =(e)=>{
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append('file', newPostImage);
-    axios.post('http://localhost:3001/upload', formData)
+const upload = async (e) => {
+  e.preventDefault();
+  const formData = new FormData();
+  formData.append('file', newPostImage);
+  axios.post('http://localhost:3001/upload', formData)
     .then((res) => {
       console.log(res);
     }).catch((err) => {
       console.log(err);
     });
-  }
-  
+};
+
+
 
 
 
@@ -88,31 +88,20 @@ const CreateCoffeeHouse = () => {
     event.preventDefault();
     console.log(newPostImage);
 
-    
 
 
-   
+
+
 
     try {
-
-      // const formData = new FormData();
-      // formData.append('file',newPostImageName);
-      // axios.post('http://localhost:3001/upload', formData)
-      // .then((res) => {
-      //   console.log(res);
-      // }).catch((err) => {
-      //   console.log(err);
-      // });
-
-      upload(event);
-
+      await upload(event);
       const { data } = await addCoffeeHouse({
         variables: {
           ownerId: profile._id,
           ...formState,
           image: newPostImageName
         },
-        
+
       });
 
 
@@ -120,11 +109,12 @@ const CreateCoffeeHouse = () => {
 
       setFormState({
         coffeeName: '',
-        address:'',
-        bio:''}
+        address: '',
+        bio: ''
+      }
       )
 
-      document.location.href=`http://localhost:3000/me/${profile._id}`;
+      document.location.href = `http://localhost:3000/me/${profile._id}`;
 
     } catch (e) {
       console.error(e);
@@ -147,7 +137,7 @@ const CreateCoffeeHouse = () => {
     );
   }
 
-  
+
 
   return (
     <div>
@@ -159,63 +149,63 @@ const CreateCoffeeHouse = () => {
         </h2>
       </div>
 
-   
+
 
 
       <form onSubmit={handleFormSubmit}>
         <div data-mdb-input-init class="form-outline mb-4">
           <input type="text" class="form-control" name="coffeeName"
-          value={formState.coffeeName} onChange={handleChange}/>
+            value={formState.coffeeName} onChange={handleChange} />
           <label class="form-label">Coffee House Name</label>
         </div>
         <div data-mdb-input-init class="form-outline mb-4">
           <input type="text" class="form-control" name="address"
-          value={formState.address} onChange={handleChange}/>
+            value={formState.address} onChange={handleChange} />
           <label class="form-label">Address</label>
         </div>
         <div data-mdb-input-init class="form-outline mb-4">
-          <textarea class="form-control" rows="4" name="bio" 
-          value={formState.bio} onChange={handleChange}></textarea>
+          <textarea class="form-control" rows="4" name="bio"
+            value={formState.bio} onChange={handleChange}></textarea>
           <label class="form-label" for="form6Example7">Tell more about your coffee story</label>
         </div>
         <div data-mdb-input-init class="form-outline mb-4">
-     
 
-      <br /> <br />
 
-      <input type="file" accept="image/*" onChange={handleImageChange} />
-        {newPostImageName && (
-          <div>
-            <h6>Selected Image: {newPostImageName}</h6>
-            <img
-              style={{ width: '50%' }}
-              src={URL.createObjectURL(newPostImage)}
-              alt={newPostImageName}
-            />
-      
-          </div>
-        )}
+          <br /> <br />
+
+          <input type="file" accept="image/*" onChange={handleImageChange} />
+          {newPostImageName && (
+            <div>
+              <h6>Selected Image: {newPostImageName}</h6>
+              <img
+                style={{ width: '50%' }}
+                src={URL.createObjectURL(newPostImage)}
+                alt={newPostImageName}
+              />
+
+            </div>
+          )}
 
         </div>
-        
-     
+
+
         <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Submit
-         
-        
-              
-             
+
+
+
+
         </button>
       </form>
-     
-
-
-        <br />
 
 
 
+      <br />
 
 
-  
+
+
+
+
       <br />  <br />  <br />
     </div>
 

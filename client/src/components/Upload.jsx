@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function Upload() {
 
-  //const [file, setFile] = useState()
+
 
   const [newPostImage, setNewPostImage] = useState(null);
   const [newPostImageName, setNewPostImageName] = useState('');
