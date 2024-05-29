@@ -5,7 +5,6 @@ import { useQuery } from '@apollo/client';
 import { useMutation } from '@apollo/client';
 import { ADD_DONATION } from '../utils/mutations';
 
-//import { GET_QUERY_CHECKOUT } from '../utils/queries';
 
 
 function Success() {
