@@ -1,20 +1,19 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Login from "./components/Login"
-import Contact from "./components/Contact";
-import Homepage from './components/Homepage';
-import Upload from './components/Upload';
-import Error from './components/Error';
+import Contact from "./pages/Contact";
+import Homepage from './pages/Homepage';
+import Upload from './pages/Upload';
+import Error from './pages/Error';
 import Signup from './components/Signup';
-import SingleEvent from './components/SingleEvent';
-import SingleCoffeeHouse from './components/SingleCoffeeHouse'
-import CreateCoffeeHouse from './components/CreateCoffeeHouse'
+import SingleEvent from './pages/SingleEvent';
+import SingleCoffeeHouse from './pages/SingleCoffeeHouse'
+import CreateCoffeeHouse from './pages/CreateCoffeeHouse'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Profile from './components/Profile';
+import Profile from './pages/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-
-import Success from './components/Success';
+import Success from './pages/Success';
 
 
 
