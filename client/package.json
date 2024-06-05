@@ -16,31 +16,24 @@
     "@testing-library/react": "^15.0.2",
     "graphql": "^16.8.1",
     "happy-dom": "^14.7.1",
-
     "react": "^18.2.0",
-
-  
     "jwt-decode": "^3.1.2",
-  
-
     "vitest": "^1.5.0",
     "@emailjs/browser": "^4.3.3",
     "@testing-library/jest-dom": "^6.4.2",
-
     "@testing-library/user-event": "^14.5.2",
     "bootstrap": "^5.3.3",
     "dayjs": "^1.11.10",
     "stripe": "^15.3.0",
     "@stripe/react-stripe-js": "^2.7.0",
-
-
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^5.1.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
-    "web-vitals": "^3.5.2"
+    "web-vitals": "^3.5.2",
+    "dotenv": "^16.4.5"
    
     
   },

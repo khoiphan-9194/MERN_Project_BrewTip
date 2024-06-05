@@ -56,7 +56,7 @@ const SingleEvent = () => {
 
 
             <Card>
-              <Card.Img style={{ height: 150 }} variant="top" src="./watergif.gif" />
+              <Card.Img style={{ height: 150 }} variant="top" src="../watergif.gif" />
               <Card.Body>
                 <Card.Title>{event.Date}</Card.Title>
                 <Image style={{ width: 800 }} src={`./coffee/${img}`} fluid alt="picture not displayed" />
