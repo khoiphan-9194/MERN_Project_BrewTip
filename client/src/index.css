@@ -757,3 +757,8 @@ font-size: large
   background:#775d4f;
     opacity: 0.5;
 }
+
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  
+}
