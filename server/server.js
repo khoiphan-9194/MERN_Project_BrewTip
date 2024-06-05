@@ -40,14 +40,14 @@ const startApolloServer = async () => {
   });
 
   const upload = multer({ storage: storage });
-  app.post('http://localhost:3001/upload', upload.single('file'), (req, res) => {
+  app.post(`localhost:${process.env.PORT}/upload`, upload.single('file'), (req, res) => {
  console.log(req.body);
     console.log(req.file);
   });
 
 
 
-  
+ 
 
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
