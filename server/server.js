@@ -40,7 +40,7 @@ const startApolloServer = async () => {
   });
 
   const upload = multer({ storage: storage });
-  app.post(`localhost:${process.env.PORT}/upload`, upload.single('file'), (req, res) => {
+  app.post('/upload', upload.single('file'), (req, res) => {
  console.log(req.body);
     console.log(req.file);
   });
