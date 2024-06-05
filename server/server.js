@@ -32,15 +32,14 @@ const startApolloServer = async () => {
     destination: (req, file, cb) => {
       return cb(null, '../client/public/uploads');
     },
-
-    
     filename: (req, file, cb) => {
      return cb(null, `${file.originalname}`);
     }
   });
 
   const upload = multer({ storage: storage });
-  app.post('/upload', upload.single('file'), (req, res) => {
+
+app.post('/upload', upload.single('file'), (req, res) => {
  console.log(req.body);
     console.log(req.file);
   });
