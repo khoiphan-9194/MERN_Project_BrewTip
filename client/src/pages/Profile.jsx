@@ -20,8 +20,7 @@ const Profile = () => {
       const { data } = await removeCoffeehouse({
         variables: { coffeeId }
       });
-      location.replace(`http://localhost:3000/`)
-
+      document.location.href="/";
 
     } catch (e) {
       console.error(e);
@@ -33,7 +32,7 @@ const Profile = () => {
   function TokenExpired_timeOut()  {
     localStorage.removeItem('id_token')
     setTimeout(() => {
-      location.replace(`http://localhost:3000`);
+      location.replace(`/`);
     }, 3000)
         
 

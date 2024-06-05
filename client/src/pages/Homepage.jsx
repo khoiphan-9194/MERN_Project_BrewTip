@@ -7,13 +7,7 @@ import CoffeeList from './CoffeeList';
 import { QUERY_COFFEEHOUSES } from '../utils/queries';
 
 
-
-
-
-
 function Homepage()  {
-
-
 
   const { loading, data } = useQuery(QUERY_COFFEEHOUSES);
   const coffeehouses = data?.coffeehouses || [];
@@ -29,7 +23,6 @@ function Homepage()  {
             
           ) : (
 
-            
             <CoffeeList
             
               coffeehouses={coffeehouses}
@@ -39,10 +32,7 @@ function Homepage()  {
           )}
           
         </div>
-        
-        
-        
-  
+ 
       </div>
     </main>
   );

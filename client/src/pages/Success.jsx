@@ -44,7 +44,8 @@ setEventDetail(customersData.event_ID);
       sessionStorage.removeItem("DonationData");
 
       if(data){
-         window.location.href = `http://localhost:3000/events/${eventDetail}`;
+        //  window.location.href = `http://localhost:3000/events/${eventDetail}`;
+         document.location.href="/"+`events/${eventDetail}`;
       }
 
 console.log(formState.nameOfdonator);

@@ -81,7 +81,7 @@ const SingleCoffeeHouse = () => {
             <div className="img-singlecoffee">
 
               <img
-                src={`/public/uploads/${coffeehouse.image}`}
+                  src={"../uploads/" + coffeehouse.image}
 
                 alt="picture not displayed"
               />

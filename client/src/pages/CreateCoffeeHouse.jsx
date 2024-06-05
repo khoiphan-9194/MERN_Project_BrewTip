@@ -90,9 +90,6 @@ const upload = async (e) => {
 
 
 
-
-
-
     try {
       await upload(event);
       const { data } = await addCoffeeHouse({
@@ -114,7 +111,7 @@ const upload = async (e) => {
       }
       )
 
-      document.location.href = `http://localhost:3000/me/${profile._id}`;
+      document.location.href="/"+`me/${profile._id}`;
 
     } catch (e) {
       console.error(e);

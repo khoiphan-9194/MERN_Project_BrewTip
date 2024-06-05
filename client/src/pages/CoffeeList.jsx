@@ -37,7 +37,7 @@ const CoffeeList = ({ coffeehouses, title }) => {
 
 
                       <img
-                        src={"./uploads/" + coffeehouse.image}
+                        src={"uploads/" + coffeehouse.image}
                         //src={URL.createObjectURL(coffeehouse.image)}
                         className="shadow-1-strong rounded mb-4"
                         alt="picture not displayed"
