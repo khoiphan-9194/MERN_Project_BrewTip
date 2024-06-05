@@ -174,6 +174,7 @@ const upload = async (e) => {
           {newPostImageName && (
             <div>
               <h6>Selected Image: {newPostImageName}</h6>
+              <h3>{URL.createObjectURL(newPostImage)}</h3>
               <img
                 style={{ width: '50%' }}
                 src={URL.createObjectURL(newPostImage)}
