@@ -52,7 +52,8 @@ const upload = async (e) => {
   e.preventDefault();
   const formData = new FormData();
   formData.append('file', newPostImage);
-  axios.post('http://localhost:3001/upload', formData)
+  // axios.post('http://localhost:3001/upload', formData)
+  axios.post('/upload', formData)
     .then((res) => {
       console.log(res);
     }).catch((err) => {
@@ -174,7 +175,7 @@ const upload = async (e) => {
           {newPostImageName && (
             <div>
               <h6>Selected Image: {newPostImageName}</h6>
-              <h3>{URL.createObjectURL(newPostImage)}</h3>
+              <h3>select: {URL.createObjectURL(newPostImage)}</h3>
               <img
                 style={{ width: '50%' }}
                 src={URL.createObjectURL(newPostImage)}
