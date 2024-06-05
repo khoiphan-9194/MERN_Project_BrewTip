@@ -35,7 +35,7 @@ const CoffeeList = ({ coffeehouses, title }) => {
                     <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
 
 
-
+                      <h3>Link {"uploads/" + coffeehouse.image}</h3>
                       <img
                         src={"uploads/" + coffeehouse.image}
                         //src={URL.createObjectURL(coffeehouse.image)}
