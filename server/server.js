@@ -39,7 +39,7 @@ const startApolloServer = async () => {
 
   const upload = multer({ storage: storage });
 
-app.post('https://mern-project-brewtip.onrender.com/upload', upload.single('file'), (req, res) => {
+app.post('/upload', upload.single('file'), (req, res) => {
  console.log(req.body);
     console.log(req.file);
   });

@@ -56,7 +56,7 @@ mutation Mutation($ownerId: ID!, $coffeeName: String!, $address: String!, $bio: 
 
 export const REMOVE_COFFEE_HOUSE =gql`
 mutation Mutation($coffeeId: ID!) {
-  removeCoffeeHouse(coffeeId: $coffeeId) {
+  tkRemoveCoffeeHouse(coffeeId: $coffeeId) {
     coffeeName
     bio
     address
