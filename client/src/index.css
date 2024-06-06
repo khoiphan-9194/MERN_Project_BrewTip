@@ -771,19 +771,20 @@ margin-top: 30px;
 
   
   
-  .main-portfolio{
-    position: relative;
-    top: 30px;
-    margin: 10px;
-    
-  }
-  .grid-portfolio{
+  :root{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(-55deg, #8f410d 0%, #263f6c 47%, #86bf13 100%);
+  }
+  .grid-item img, .grid-item h3
+  {
+    width: 100%
 
   }
+
   .text-center h5{
 
     font-size: 35px;
