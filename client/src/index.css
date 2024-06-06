@@ -769,11 +769,7 @@ margin-top: 30px;
 @media screen and (max-width: 530px) {
   /* For tablets: */
 
-  * {
-    padding: 5;
-    margin: 5;
-}
-
+  
   
   .main-portfolio{
     position: relative;
@@ -794,7 +790,7 @@ margin-top: 30px;
   .small-quote
   {
     position: relative;
-    right: 350px;
+    right: 380px;
   }
   .time-display
   {
@@ -803,17 +799,21 @@ margin-top: 30px;
     position: relative;
     left: 180px;
     top: 60px;
-    width: 35%;
-    font-size: 20px;
+    width: 30%;
+    font-size: 15px;
   }
   .nav{
     display: flex;
- 
-    margin-right: 65px;
-    width: 100%;
     justify-content: center;
-    align-items: center;
-    
+    margin-right: 35px;
+    width: fit-content;
+    background-color: #030303;
+ 
+
+  }
+  .nav-item{
+font-size: 15px;
+  
   }
 
 .contact-info p,
