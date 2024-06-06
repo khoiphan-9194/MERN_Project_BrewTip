@@ -779,21 +779,23 @@ margin-top: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-65deg, #8f410d 0%, #727249 47%, #150136 80%);
+    background: linear-gradient(-65deg, #8f410d 0%, #727249 47%, #200157 80%);
   }
   .grid-item img, .grid-item h3
   {
     width: 100%
 
   }
-
+  
   .text-center h5{
 
     font-size: 25px;
     margin-top: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  
   
   }
+
   .small-quote span
   {
     position: relative;
@@ -834,9 +836,9 @@ font-size: 15px;
 }
 
 .container {
-margin-top: 15px;
-width: 85%;
-
+margin-top: 100px;
+width: 50%;
+padding: 1px
 
 }
 .img-singlecoffee img{
