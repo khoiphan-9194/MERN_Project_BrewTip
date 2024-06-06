@@ -45,7 +45,7 @@ mutation Mutation($eventId: ID!, $nameOfdonator: String!, $donateAmount: Int!, $
 
 export const ADD_COFFEE_HOUSE= gql`
 mutation Mutation($ownerId: ID!, $coffeeName: String!, $address: String!, $bio: String!, $image: String!) {
-  tkAddCoffeeHouse(ownerId: $ownerId, coffeeName: $coffeeName, address: $address, bio: $bio, image: $image) {
+  addCoffeeHouse(ownerId: $ownerId, coffeeName: $coffeeName, address: $address, bio: $bio, image: $image) {
     coffeeName
     address
     bio
