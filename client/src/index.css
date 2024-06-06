@@ -186,11 +186,13 @@ color: rgb(32, 29, 29);
 
 
 
-.text-center
+.text-center h5
 {
 
   position: relative;
-  bottom: 120px;
+  bottom: 15px;
+  font-size: 100px;
+
   
  
 }
