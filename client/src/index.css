@@ -789,8 +789,9 @@ margin-top: 30px;
 
   .text-center h5{
 
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 25px;
+    margin-top: 80px;
+ 
   
   }
   .small-quote span
@@ -833,9 +834,9 @@ font-size: 15px;
 }
 
 .container {
-margin-top: 100px;
-width: 60%;
-padding: 2px
+margin-top: 15px;
+width: 85%;
+
 
 }
 .img-singlecoffee img{
