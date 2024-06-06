@@ -700,7 +700,7 @@ font-size: large
 }
 
 
-@media screen and (max-width: 795px) {
+@media screen and (max-width: 1300px) {
   /* For tablets: */
   * {
     padding: 5;
@@ -741,10 +741,11 @@ font-size: large
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 280px;
+    left: 100px;
     top: 50px;
-    width: 35%;
+    width: 55%;
     font-size: 20px;
+    opacity: 1;
   }
   
 
@@ -768,19 +769,11 @@ margin-top: 30px;
 }
 
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 550px) {
   /* For tablets: */
 
   
-  
-  :root{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(-65deg, #8f410d 0%, #727249 47%, #200157 80%);
-  }
+
   .grid-item img, .grid-item h3
   {
     width: 100%
@@ -837,13 +830,19 @@ font-size: 15px;
 
 .container {
 margin-top: 100px;
-width: 50%;
+width:30cap;
 padding: 1px
 
 }
 .img-singlecoffee img{
   width: 80%;
   height: 10%;
+}
+.input-group-text{
+
+  white-space:wrap;
+  font-size: 20px;
+  width:45% ; 
 }
 footer{
   display: flex;

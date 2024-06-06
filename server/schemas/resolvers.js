@@ -3,7 +3,7 @@ const { Event, Donation, Owner, CoffeeHouse } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 require('dotenv').config({ path: '.env' });
 //const stripe = require('stripe')('sk_test_51P8xUcG2NM1wzTlBt75Srj2QRMVklMPKmADpqsSdZNgaNsV3CL5jwIxBl8G8FtAxQOWLunZXbVIUGAXEuKPjk7Au00ElExjxFT');
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')(`${process.env.STRIPE_SECRET}`);
 const resolvers = {
   Query: {
   
