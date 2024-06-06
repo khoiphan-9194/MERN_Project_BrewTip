@@ -698,7 +698,7 @@ font-size: large
 }
 
 
-@media only screen and (max-width: 795px) {
+@media screen and (max-width: 795px) {
   /* For tablets: */
   * {
     padding: 5;
@@ -764,3 +764,70 @@ margin-top: 30px;
   height: 10%;
 }
 }
+
+
+@media screen and (max-width: 530px) {
+  /* For tablets: */
+
+  * {
+    padding: 5;
+    margin: 5;
+}
+  .main-portfolio{
+    position: relative;
+    top: 30px
+  }
+  .grid-portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-center h5{
+
+    font-size: 35px;
+    margin-top: 40px;
+  
+  }
+  .small-quote
+  {
+    position: relative;
+    right: 350px;
+  }
+  .time-display
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 180px;
+    top: 60px;
+    width: 35%;
+    font-size: 20px;
+  }
+  .nav{
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    width: 100%;
+  }
+
+.contact-info p,
+.address,
+.address a
+
+{
+  font-size: 15px;
+}
+
+.container {
+margin-top: 100px;
+
+}
+.img-singlecoffee img{
+  width: 100%;
+  height: 10%;
+}
+}
+

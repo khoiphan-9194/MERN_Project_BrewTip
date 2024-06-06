@@ -14,7 +14,7 @@ function NavTabs() {
     Auth.logout();
   };
   return (
-
+    
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link
