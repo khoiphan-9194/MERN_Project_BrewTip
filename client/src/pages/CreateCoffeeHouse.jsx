@@ -47,13 +47,13 @@ const CreateCoffeeHouse = () => {
 
   };
 
-
+const NODE_ENV  = process.env.NODE_ENV || 'development';
 const upload = async (e) => {
   e.preventDefault();
   const formData = new FormData();
   formData.append('file', newPostImage);
-   axios.post('http://localhost:3001/upload', formData)
-  // axios.post(`localhost:${process.env.PORT||3001}/upload`, formData)
+  // axios.post('http://localhost:3001/upload', formData)
+   axios.post(`localhost:${NODE_ENV}/upload`, formData)
 
     .then((res) => {
       console.log(res);
