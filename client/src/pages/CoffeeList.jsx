@@ -65,7 +65,9 @@ const CoffeeList = ({ coffeehouses, title }) => {
                     >
                       Click to see details.
                     </Link>
+                    <h6>---------------</h6>
                   </div>
+                <br />
                 </div>
 
               );
