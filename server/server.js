@@ -55,8 +55,8 @@ app.post('/upload', upload.single('file'), (req, res) => {
       res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
 
-    app.get('/upload', (req, res) => {
-      res.sendFile(path.join(__dirname, `../client/dist/uploads`));
+    app.get('/upload/:filename', (req, res) => {
+      res.sendFile(path.join(__dirname, `../client/dist/uploads/${req.params.filename}`));
     });
   }
 
