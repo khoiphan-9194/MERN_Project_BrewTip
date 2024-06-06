@@ -30,7 +30,7 @@ const startApolloServer = async () => {
 
   const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      return cb(null, '../client/dist/uploads');
+      return cb(null, '../client/public/uploads');
     },
     filename: (req, file, cb) => {
      return cb(null, `${file.originalname}`);
@@ -53,6 +53,10 @@ app.post('/upload', upload.single('file'), (req, res) => {
 
     app.get('*', (req, res) => {
       res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+    });
+
+    app.get('/upload/:filename', (req, res) => {
+      res.sendFile(path.join(__dirname, `../client/dist/uploads/${req.params.filename}`));
     });
   }
 

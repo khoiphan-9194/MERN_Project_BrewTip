@@ -15,7 +15,7 @@
     "render-build": "npm install && npm run build",
     "dev": "cd client && npm run dev"
   },
-  "author": "Jonathan Campos, Khoi Phan, Ryan Gurley",
+  "author": " Khoi Phan",
   "license": "MIT",
   "dependencies": {
     "concurrently": "^8.2.2",
