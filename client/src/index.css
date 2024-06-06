@@ -773,6 +773,8 @@ margin-top: 30px;
     padding: 5;
     margin: 5;
 }
+
+  
   .main-portfolio{
     position: relative;
     top: 30px
@@ -807,10 +809,11 @@ margin-top: 30px;
   .nav{
     display: flex;
  
+    margin-right: 65px;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
-    width: 100%;
+    
   }
 
 .contact-info p,
@@ -823,11 +826,21 @@ margin-top: 30px;
 
 .container {
 margin-top: 100px;
+width: 70%;
 
 }
 .img-singlecoffee img{
-  width: 100%;
+  width: 80%;
   height: 10%;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 00px;
+  width: 100%;
+  background: radial-gradient(circle,#f6f1f1,#44ab7b,#49b011);  
 }
 }
 
