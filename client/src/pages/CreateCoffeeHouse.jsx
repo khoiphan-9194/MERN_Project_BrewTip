@@ -52,8 +52,8 @@ const upload = async (e) => {
   e.preventDefault();
   const formData = new FormData();
   formData.append('file', newPostImage);
-   await axios.post('http://localhost:3001/upload', formData)
- // await axios.post('https://mern-project-brewtip.onrender.com/upload', formData)
+   axios.post('http://localhost:3001/upload', formData)
+  //axios.post(`localhost:${NODE_ENV}/upload`, formData)
 
     .then((res) => {
       console.log(res);
