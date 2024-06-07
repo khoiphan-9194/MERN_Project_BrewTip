@@ -52,7 +52,18 @@ const upload = async (e) => {
   e.preventDefault();
   const formData = new FormData();
   formData.append('file', newPostImage);
-   axios.post(`http://localhost:10000/upload`, formData)
+   axios.post(`http://localhost:${process.env.PORT}/upload`, formData)
+
+
+
+   //axios.post(`http://localhost:${process.env.PORT}/upload`, formData)
+   //console.log(process.env.PORT)
+   //console.log(process.env.NODE_ENV)
+  
+  
+  
+  //axios.post(`localhost:${NODE_ENV}/upload`, formData)
+
     .then((res) => {
       console.log(res);
     }).catch((err) => {
