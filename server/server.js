@@ -9,7 +9,7 @@ const cors = require('cors');
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
@@ -55,11 +55,6 @@ app.post('/upload', upload.single('file'), (req, res) => {
       res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
 
-    //
-    app.post('/upload', upload.single('file'), (req, res) => {
-      console.log(req.body);
-      console.log(req.file);
-    });
   }
 
   db.once('open', () => {
