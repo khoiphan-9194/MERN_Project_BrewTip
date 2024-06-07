@@ -52,10 +52,7 @@ const upload = async (e) => {
   e.preventDefault();
   const formData = new FormData();
   formData.append('file', newPostImage);
-   axios.post(`http://localhost:3001/upload`, formData)
-  
-  //axios.post(`localhost:${NODE_ENV}/upload`, formData)
-
+   axios.post(`http://localhost:10000/upload`, formData)
     .then((res) => {
       console.log(res);
     }).catch((err) => {
@@ -114,7 +111,7 @@ const upload = async (e) => {
       }
       )
 
-      document.location.href="/"+`me/${profile._id}`;
+   //   document.location.href="/"+`me/${profile._id}`;
 
     } catch (e) {
       console.error(e);
