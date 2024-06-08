@@ -54,11 +54,7 @@ const upload = async (e) => {
   formData.append('file', newPostImage);
    axios.post(`http://localhost:3001/upload`, formData)
 
-console.log(formData.get('file'))
-console.log(formData.get('file').name)
-console.log(formData.get('file').type)
-console.log(formData.get('file').size)
-console.log(formData)
+
    //console.log(process.env.PORT)
    //console.log(process.env.NODE_ENV)
   
