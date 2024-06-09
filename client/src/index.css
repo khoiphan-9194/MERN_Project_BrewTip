@@ -11,9 +11,20 @@
   --main-font: 'Roboto', sans-serif;
   --title-font: 'Roboto Slab', serif;
 
-  /* background-image: url('https://i.stack.imgur.com/kx8MT.gif'); */
-  background-color: rgb(49, 93, 82);
- 
+  /* background: url('https://i.stack.imgur.com/kx8MT.gif'); */
+  /* background-color: rgb(49, 93, 82); */
+
+  /* background: linear-gradient(109.5deg, rgb(25, 24, 30) 9.4%, rgb(87, 4, 110) 78.4%);
+
+
+
+
+  background: linear-gradient(
+    to right, rgb(36, 36, 37) 9.4%, rgb(71, 53, 77) 78.4%,rgb(241, 241, 245) 9.4%
+  ); */
+
+  background: linear-gradient(90deg in hsl shorter hue, rgb(17, 17, 17) 60%, rgb(11, 16, 60));
+
 
   
 }
