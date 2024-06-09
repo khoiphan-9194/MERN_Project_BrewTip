@@ -46,7 +46,7 @@ function Upload() {
   return (
     <div className="App">
 
-      <form onSubmit={upload}>
+      <form className='upload' onSubmit={upload}>
         <input type="file" accept="image/*" onChange={handleImageChange} />
         {newPostImageName && (
           <div>
