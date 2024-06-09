@@ -30,6 +30,7 @@
     "@stripe/react-stripe-js": "^2.7.0",
     "@stripe/stripe-js": "^3.3.0",
     "axios": "^1.6.8",
+    "express-fileupload": "^1.4.0",
     "dotenv": "^16.4.5"
   },
 
